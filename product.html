@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <div class="max-w-7xl mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-8 bg-white shadow-lg rounded-lg mt-10">
+    
+    <!-- Left: Product Images -->
+    <div>
+      <img src="red.jpg" alt="Dress" class="w-full rounded-lg" />
+      <div class="flex space-x-2 mt-4">
+        <img src="black.jpg" class="w-16 h-16 object-cover border rounded" alt="">
+        <img src="blue.jpg" class="w-16 h-16 object-cover border rounded" alt="">
+        <img src="red.jpg" class="w-16 h-16 object-cover border rounded" alt="">
+      </div>
+    </div>
+
+    <!-- Right: Product Details -->
+    <div class="space-y-4">
+      <h1 class="text-2xl font-semibold">Cotton role</h1>
+      <div class="text-yellow-500">★★★★☆ <span class="text-gray-600">(62 ratings)</span></div>
+      <div class="text-xl font-bold text-red-600">₹300 <span class="text-sm line-through text-gray-500">₹500</span></div>
+      <p class="text-green-600">Inclusive of all taxes</p>
+
+      <!-- Sizes -->
+      <div>
+        <p class="font-semibold">Size:</p>
+        <div class="flex space-x-2 mt-1">
+          <button class="border px-3 py-1 rounded hover:bg-gray-200">S</button>
+          <button class="border px-3 py-1 rounded hover:bg-gray-200">M</button>
+          <button class="border px-3 py-1 rounded bg-blue-100 border-blue-500">L</button>
+          <button class="border px-3 py-1 rounded hover:bg-gray-200">XL</button>
+        </div>
+      </div>
+
+      <!-- Product Details -->
+      <div class="text-sm">
+        <p><strong>Material type:</strong> Cotton</p>
+        <p><strong>Length:</strong> Maxi</p>
+        <p><strong>Occasion type:</strong> Casual</p>
+        <p><strong>Pattern:</strong> Floral</p>
+        <p><strong>Style:</strong> A-Line</p>
+        <p><strong>Country of Origin:</strong> India</p>
+      </div>
+
+      <!-- Buttons -->
+      <div class="space-y-2">
+        <button class="w-full bg-yellow-400 text-black py-2 rounded hover:bg-yellow-500 font-semibold">Add to Cart</button>
+        <a href="pay.html">
+        <button class="w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 font-semibold">Buy Now</button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="p-4">
+  <h2 class="text-lg font-semibold mb-4">Related products with free delivery on eligible orders</h2>
+  <div class="relative">
+    <!-- Scrollable container -->
+    <div class="flex space-x-4 overflow-x-auto scrollbar-hide">
+      
+      <!-- Product Card 1 -->
+      <a href="#" class="min-w-[180px] bg-white shadow rounded-md p-2 hover:shadow-md transition">
+        <img src="product1.jpg" alt="Product" class="w-full h-32 object-contain" />
+        <h3 class="text-sm font-medium mt-2">Asian Hobby Crafts Embroidery Kit</h3>
+        <p class="text-xs text-red-600 font-semibold mt-1">-22% ₹544 <span class="line-through text-gray-500">₹699</span></p>
+        <p class="text-xs text-gray-600 mt-1">Prime</p>
+      </a>
+
+      <!-- Product Card 2 -->
+      <a href="#" class="min-w-[180px] bg-white shadow rounded-md p-2 hover:shadow-md transition">
+        <img src="product2.jpg" alt="Product" class="w-full h-32 object-contain" />
+        <h3 class="text-sm font-medium mt-2">STAR WORK Muslin Cloth</h3>
+        <p class="text-xs text-red-600 font-semibold mt-1">-64% ₹179 <span class="line-through text-gray-500">₹499</span></p>
+        <p class="text-xs text-yellow-600">Amazon's Choice</p>
+        <p class="text-xs text-gray-600">Prime</p>
+      </a>
+
+      <!-- More Product Cards... -->
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
